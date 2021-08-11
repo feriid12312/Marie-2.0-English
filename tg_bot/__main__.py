@@ -20,9 +20,8 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Salam {}, mənim adım {}! Mənim haqqımda məlumat öyrənmək üçün /help yaz... 
 Mən qrup idarə edicisiyəm və [sahibim budur](tg://user?id={}).
-Mənim yeniləmələrim haqqında - @MarieChechi & və dəstək qrupumuz olan @LamiyaSupport -a qatıla bilərsiz.
-Əgər sizində belə botunuzun olmasın istəyirsizsə bu botu [Heroku hesabınıza deploy edərək](https://heroku.com/deploy?template=https://github.com/ValiyevAli/LamiyaBOT),
-mənim kimi klon bot hazırlaya bilərsiz..
+Mənim yeniləmələrim haqqında - @BTCResmi & və dəstək qrupumuz olan @BTCSohbet -a qatıla bilərsiz.
+
 Daha çox məlumat üçün /help yazın...
 **Diqqət!!! Kodlarda olan hər hansı dəyişiklik lisenziyaya uyğun olaraq github-da olmalıdır.**
 """
