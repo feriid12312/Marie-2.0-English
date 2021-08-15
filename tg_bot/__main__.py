@@ -17,10 +17,17 @@ from tg_bot.modules import ALL_MODULES
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
-@app.on_message(filters.private & filters.command(['start']))
-async def start(client, message):
-	await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],               [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]   ]  ) )
+PM_START_TEXT = """
+hoi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+im a group manager bot maintained by  [this person](tg://user?id={}).
+My future updates will be put into This Channel - @MarieChechi & My Support Group @InFoTelGroup.
+This is my [Deploy Code](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie-2.0-English),
+you can create clone same like me..
+For more commands click /help...
+**Keep in mind that any changes you DO do to the source have to be on github, as per the license.** reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],               [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]   ]  ) )
 
+ 
+"""
 HELP_STRINGS = """
 Salam! mənim adım *{}*.
 *Əsas* komandalar:
