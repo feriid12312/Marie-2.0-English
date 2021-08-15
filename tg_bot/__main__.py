@@ -18,12 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Salam {}, mənim adım {}! Mənim haqqımda məlumat öyrənmək üçün /help yaz... 
-Mən qrup idarə edicisiyəm və [sahibim budur](tg://user?id={}).
-Mənim yeniləmələrim haqqında - @BTCResmi & və dəstək qrupumuz olan @BTCSohbet -a qatıla bilərsiz.
-
-Daha çox məlumat üçün /help yazın...
-**Diqqət!!! Kodlarda olan hər hansı dəyişiklik lisenziyaya uyğun olaraq github-da olmalıdır.**
+__I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],               [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]   ]  ) )
 """
 
 HELP_STRINGS = """
