@@ -92,6 +92,17 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name), SUPPORT_CHAT),
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup([[
+                    InlineKeyboardButton(
+                        text="Add AstrakoBot to your group",
+                        url="t.me/{}?startgroup=true".format(
+                            context.bot.username))
+                ]]))
 
 # do not async
 def send_help(chat_id, text, keyboard=None):
